@@ -1,1 +1,33 @@
 // Navigation code here
+.navbar{
+    .flex(@direction:column);
+    padding: 2vh;
+    width:100%;
+    background-color: @sea-shell;
+
+    @media @mobile{
+        padding: 1vh;
+    }
+    
+
+    h2{
+      margin: 0 0 2vh;
+      font-size:5rem;
+    }
+
+    .nav-link{
+      .flex(@justify:space-between);
+        max-width:75%;
+        min-width:50%;
+        font-size: 2rem;
+
+        @media @mobile{
+            width: 100%;
+        }
+        
+      a{
+        text-decoration: none;
+        color:@ebony-clay
+      }
+    } 
+  }
